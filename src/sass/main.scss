@@ -1,0 +1,26 @@
+@import "utilities/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/button.scss";
+@import "components/wrappers.scss";
+@import "components/input.scss";
+@import "components/sidebar.scss";
+@import "components/navbar.scss";
+@import "components/charts";
+@import "components/sorting.scss";
+@import "components/modal.scss";
+@import "components/table.scss";
+@import "components/notification.scss";
+@import "components/loader.scss";
+@import "components/notifications.scss";
+@import "components/sendinvite";
+
+@import "./pages/login.scss";
+@import "./pages/verify.scss";
+@import "./pages/notfound.scss";
+@import "./pages/dashboard.scss";
+@import "./pages/providers.scss";
+@import "./pages/profile.scss";
+@import "./pages/reporting.scss";

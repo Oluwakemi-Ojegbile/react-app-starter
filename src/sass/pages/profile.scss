@@ -1,0 +1,57 @@
+.profile-wrap {
+  height: 80vh;
+  background: #ffffff;
+  border: 1px solid $dull-text;
+  box-sizing: border-box;
+  border-radius: 4px;
+  &-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: $deep-dark-color;
+    padding-bottom: 20px;
+  }
+  &-form {
+    width: 60%;
+    padding: 30px 0 40px 20px;
+  }
+  &-forminput {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
+  &-select {
+    align-self: end;
+  }
+  &-canclesave {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    align-items: center;
+    &-cancel {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: $light-dark-color;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-wrap {
+    &-form {
+      width: 87%;
+      padding: 30px 0 40px 20px;
+    }
+    &-forminput {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

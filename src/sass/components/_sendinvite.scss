@@ -1,0 +1,102 @@
+.registered-email {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $light-dark-color;
+  padding-bottom: 35px;
+}
+.email-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: $light-dark-color;
+  padding-bottom: 10px;
+}
+.role-select,
+.edit-email {
+  padding-top: 20px;
+}
+
+.error {
+  margin-top: 5px;
+  font-size: 90%;
+  color: tomato;
+}
+
+.searching-email {
+  margin-top: 5px;
+  font-size: 90%;
+  color: $light-dark-color;
+}
+
+.react-multi-email [data-tag] {
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: $deep-dark-color !important;
+  background: #f4f5f6 !important;
+  border-radius: 12px !important;
+}
+
+.react-multi-email {
+  background: #ffffff !important;
+  border: 1px solid #d7dce0 !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+}
+
+.edit-checkboxes {
+  display: grid;
+  grid-row-gap: 20px;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #d7dce0;
+
+  &-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.002em;
+    color: $light-dark-color;
+  }
+
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 13px;
+    cursor: pointer;
+    font-size: 8px;
+    visibility: hidden;
+  }
+
+  input[type="checkbox"]:after {
+    content: " ";
+    display: inline-block;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    visibility: visible;
+    background: #fff;
+    border: 1px solid #d7dce0;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  input[type="checkbox"]:checked:after {
+    content: url("../../assets/checked.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

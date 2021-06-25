@@ -1,0 +1,50 @@
+.login-headers {
+  text-align: center;
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $deep-dark-color;
+    max-width: 300px;
+    margin: 0 auto 16px auto;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.05px;
+    color: $light-dark-color;
+    margin-bottom: 26px;
+  }
+}
+
+.forgot-password {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: $yellow-color;
+  float: right;
+  margin-top: 16px;
+}
+
+.login-link {
+  float: none;
+  justify-content: center;
+  display: flex;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 500px) and (max-width: 1150px) {
+}
+
+@media screen and (max-width: 768px) {
+}

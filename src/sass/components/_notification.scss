@@ -1,0 +1,122 @@
+.notification {
+  box-sizing: border-box;
+  padding: 15px 40px 15px 58px !important;
+  border-radius: 4px !important;
+  color: #fff;
+  background-color: #ccc;
+  box-shadow: none !important;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1.2em;
+  position: relative;
+  opacity: 1 !important;
+  margin-top: 50px !important;
+}
+
+.notification-container {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  width: 442px !important;
+  padding: 0px 15px;
+  max-height: calc(100% - 30px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 4px !important;
+}
+
+.notification-error {
+  background-color: $error-color-dull !important;
+  border: 1px solid $error-color !important;
+  color: $error-color !important;
+}
+
+.notification-info {
+  background-color: $info-color-dull !important;
+  border: 1px solid $info-color !important;
+  color: $info-color !important;
+}
+
+.notification-success {
+  background-color: $success-color-dull !important;
+  border: 1px solid $success-color !important;
+  color: $success-color !important;
+}
+
+.notification:before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -14px;
+  display: block;
+  font-family: "Notification";
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center;
+}
+
+.notification-success:before {
+    content: url(../../assets/close-success.svg) !important;
+}
+
+.notification-error:before {
+    content: url(../../assets/close-error.svg) !important;
+}
+
+.notification-info:before {
+    content: url(../../assets/close-info.svg) !important;
+}
+
+.notification-info:after {
+    content: url(../../assets/info-close.svg) !important;
+}
+
+.notification-success:after {
+    content: url(../../assets/success-close.svg) !important;
+}
+
+.notification-error:after {
+    content: url(../../assets/error-close.svg) !important;
+}
+
+.notification:after {
+  position: absolute !important;
+  top: 50% !important;
+  right: 20px !important;
+  margin-top: -10px !important;
+  display: block !important;
+  font-family: "Notification";
+  width: 11px !important;
+  height: 11px !important;
+  text-align: center;
+}
+
+.notification-message {
+  .message {
+    font-family: "Inter" !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 0.4px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .notification-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 100% !important;
+    padding: 0px 15px;
+    max-height: calc(100% - 30px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 4px !important;
+  }
+  
+}

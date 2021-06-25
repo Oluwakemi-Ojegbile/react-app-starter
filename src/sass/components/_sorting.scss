@@ -1,0 +1,230 @@
+.search-div {
+  width: 400px;
+  height: 40px;
+  border: 1px solid $dull-text;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #fff;
+  padding: 12px 16px;
+  background-position: right 13px center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/search.svg");
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.05px;
+  color: $deep-dark-color;
+
+  &::placeholder {
+    color: $search-text;
+  }
+}
+
+.filter-div {
+  width: 92px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid $dull-text;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  padding: 12px 16px;
+  cursor: pointer;
+
+  span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    margin-right: 9px;
+  }
+
+  &-img {
+    width: 13px;
+    height: 13px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.flex-options {
+  display: flex;
+}
+
+.options-div {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid $dull-text;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &-img {
+    width: 3px;
+    height: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.filter-modal-btn {
+  margin-top: 40px;
+}
+
+.messages-status {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: $light-dark-color;
+  margin-top: 32px;
+  width: 100%;
+  min-height: 50px;
+
+  &-label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: $light-dark-color;
+    margin-bottom: 16px;
+  }
+
+  &-group {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+
+    &-each {
+      cursor: pointer;
+      height: 15px;
+      min-width: 68px;
+      display: flex;
+      align-items: center;
+
+      &-image {
+        width: 15px;
+        height: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-label {
+        margin-left: 8px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.add-provider-flags {
+  max-width: 245px !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  cursor: pointer;
+  width: 100% !important;
+  display: flex;
+  height: 48px !important;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box !important;
+  border-radius: 4px;
+  border: 1px solid $dull-text !important;
+  background: transparent !important;
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.4px;
+  color: $deep-dark-color !important;
+}
+
+.ReactFlagsSelect-module_selectFlag__2q5gC svg {
+  height: 24px !important;
+  width: 24px !important;
+  border-radius: 50% !important;
+}
+
+.ReactFlagsSelect-module_label__27pw9 {
+  overflow: visible !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7::after {
+  width: 0.4em !important;
+  height: 0.4em !important;
+  margin-right: 10px !important;
+  border-right: 0.2em solid $light-dark-color !important;
+  border-top: 0.2em solid $light-dark-color !important;
+  transform: rotate(130deg) !important;
+  border-left: none !important;
+  margin-left: 0 !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded="true"]:after {
+  border-top: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: none !important;
+}
+
+.ReactFlagsSelect-module_selectValue__152eS {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: -0.117188px !important;
+  color: $light-dull-text !important;
+  white-space: normal !important;
+}
+
+.ReactFlagsSelect-module_label__27pw9 {
+  color: $deep-dark-color;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.05px !important;
+  // white-space: pre-wrap !important;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-options {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .search-div {
+    width: 100% !important;
+  }
+
+  .filter-div {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .add-provider-flags {
+    max-width: 100% !important;
+  }
+}
